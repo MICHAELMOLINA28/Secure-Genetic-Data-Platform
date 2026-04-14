@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DNA Results</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<nav>
+    <ul>
+        <li><a href="dashboard.html">Dashboard</a></li>
+        <li><a href="#">My Health Data</a></li>
+        <li><a href="dna-results.html">DNA Results</a></li>
+        <li><a href="#">Privacy & Security</a></li>
+        <li><a href="#">Resources</a></li>
+        <li><a href="#">Support</a></li>
+    </ul>
+    <span class="secure">🔒 Secure Connection • Encrypted</span>
+</nav>
+
+<div class="container">
+
+<h1>DNA Results</h1>
+
+<input type="text" placeholder="Search traits...">
+<p class="error">⚠ No results found. Please enter a valid trait.</p>
+
+<button class="manage-btn">⚙ Manage Data</button>
+
+<table>
+    <tr>
+        <th>Trait</th>
+        <th>Result</th>
+        <th>Risk</th>
+        <th>Status</th>
+    </tr>
+    <tr>
+        <td>Example</td>
+        <td>Positive</td>
+        <td>Low ℹ</td>
+        <td>Normal</td>
+    </tr>
+</table>
+
+<h2>Visual Breakdown of Your Results</h2>
+<button>Chart</button>
+<button>Table</button>
+
+<div class="chart-box">Graph / Chart</div>
+
+<button onclick="confirmDownload()">Download Report</button>
+
+<div class="privacy-box">
+    <h3>Your Data & Privacy</h3>
+    <label><input type="checkbox"> Allow data sharing</label>
+    <p><a href="#">View Privacy Settings</a></p>
+    <p><a href="#">Delete My Data</a></p>
+</div>
+
+<button class="help">Need Help?</button>
+
+</div>
+
+<script>
+function confirmDownload() {
+    alert("Are you sure you want to download your genetic report?\nThis file may contain sensitive information.");
+}
+</script>
+
+</body>
+</html>
