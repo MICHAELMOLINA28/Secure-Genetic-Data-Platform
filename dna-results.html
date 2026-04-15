@@ -6,55 +6,67 @@
 </head>
 <body>
 
+<div class="top-bar">
+    <span>Secure Genetic Data Platform - DNA Results</span>
+    <span class="secure">🔒 Secure • Encrypted</span>
+</div>
+
 <nav>
-    <ul>
-        <li><a href="dashboard.html">Dashboard</a></li>
-        <li><a href="#">My Health Data</a></li>
-        <li><a href="dna-results.html">DNA Results</a></li>
-        <li><a href="#">Privacy & Security</a></li>
-        <li><a href="#">Resources</a></li>
-        <li><a href="#">Support</a></li>
-    </ul>
-    <span class="secure">🔒 Secure Connection • Encrypted</span>
+    <a href="dashboard.html">Dashboard</a>
+    <a href="#">My Health Data</a>
+    <a href="dna-results.html">DNA Results</a>
+    <a href="#">Privacy & Security</a>
+    <a href="#">Resources</a>
+    <a href="#">Support</a>
+    <a href="#">Profile</a>
 </nav>
 
 <div class="container">
 
 <h1>DNA Results</h1>
 
-<input type="text" placeholder="Search traits...">
-<p class="error">⚠ No results found. Please enter a valid trait.</p>
+<div class="search-row">
+    <input type="text" placeholder="Search traits...">
+    <button>🎤</button>
+    <button class="manage">⚙ Manage Data</button>
+</div>
 
-<button class="manage-btn">⚙ Manage Data</button>
+<div class="error-box">
+    ⚠ No results found<br>
+    Please enter a valid trait
+</div>
 
 <table>
     <tr>
         <th>Trait</th>
         <th>Result</th>
-        <th>Risk</th>
+        <th>Risk ℹ</th>
         <th>Status</th>
     </tr>
     <tr>
-        <td>Example</td>
+        <td>Example Trait</td>
         <td>Positive</td>
-        <td>Low ℹ</td>
+        <td>Low</td>
         <td>Normal</td>
     </tr>
 </table>
 
-<h2>Visual Breakdown of Your Results</h2>
-<button>Chart</button>
-<button>Table</button>
+<h3>Visual Breakdown of Your Results</h3>
+
+<div class="toggle">
+    <button>Chart</button>
+    <button>Table</button>
+</div>
 
 <div class="chart-box">Graph / Chart</div>
 
-<button onclick="confirmDownload()">Download Report</button>
+<button class="download" onclick="confirmDownload()">Download Report</button>
 
-<div class="privacy-box">
+<div class="privacy">
     <h3>Your Data & Privacy</h3>
     <label><input type="checkbox"> Allow data sharing</label>
-    <p><a href="#">View Privacy Settings</a></p>
-    <p><a href="#">Delete My Data</a></p>
+    <p>View Privacy Settings</p>
+    <p>Delete My Data</p>
 </div>
 
 <button class="help">Need Help?</button>
