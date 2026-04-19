@@ -165,14 +165,6 @@ button:hover {
     box-sizing: border-box;
 }
 
-/* ===== ERROR BOX ===== */
-.error-box {
-    border: 1px solid #999;
-    background: #f5f5f5;
-    padding: 10px;
-    margin-bottom: 15px;
-    font-size: 14px;
-}
 
 /* ===== TABLE ===== */
 table {
