@@ -1,17 +1,31 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Login</title>
+    <title>Secure Genetic Data Platform</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-<h2>Login</h2>
+<div class="login-box">
+    <h1>Secure Genetic Data Platform</h1>
+    <h2>Login to Access Your Health & Genetic Data</h2>
 
-<form onsubmit="login(event)">
-    <input type="text" placeholder="Email" required><br><br>
-    <input type="password" placeholder="Password" required><br><br>
-    <button type="submit">Login</button>
-</form>
+    <form onsubmit="login(event)">
+        <label>Username or Email:</label>
+        <input type="text" required>
+
+        <label>Password:</label>
+        <input type="password" required>
+
+        <button type="submit">Login</button>
+    </form>
+
+    <p class="links">Forgot Password? | Create Account</p>
+
+    <p class="secure-msg">
+        Your data is securely encrypted. You control how your genetic information is stored and shared.
+    </p>
+</div>
 
 <script>
 function login(e) {
