@@ -55,8 +55,7 @@ nav a:hover {
 
 /* ===== LOGIN PAGE ===== */
 .login-box {
-    width: 60%;
-    max-width: 600px;
+    width: 500px;
     margin: 90px auto;
     background: #fff;
     border: 1px solid #b5b5b5;
