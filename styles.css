@@ -113,13 +113,6 @@ nav a:hover {
     font-size: 14px;
 }
 
-.secure-msg {
-    margin-top: 18px;
-    font-size: 12px;
-    color: #444;
-    line-height: 1.5;
-}
-
 /* ===== DASHBOARD CARDS ===== */
 .card {
     border: 1px solid #999;
