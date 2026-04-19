@@ -1,36 +1,66 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Secure Genetic Data Platform</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
 <div class="login-box">
+
     <h1>Secure Genetic Data Platform</h1>
     <h2>Login to Access Your Health & Genetic Data</h2>
 
     <form onsubmit="login(event)">
-        <label>Username or Email:</label>
-        <input type="text" required>
 
-        <label>Password:</label>
-        <input type="password" required>
+        <label for="email">Username or Email:</label>
+        <input 
+            type="text" 
+            id="email" 
+            name="email" 
+            placeholder="Enter email or username"
+            required
+        >
+
+        <label for="password">Password:</label>
+        <input 
+            type="password" 
+            id="password" 
+            name="password" 
+            placeholder="Enter password"
+            required
+        >
 
         <button type="submit">Login</button>
+
     </form>
 
-    <p class="links">Forgot Password? | Create Account</p>
+    <p class="links">
+        <a href="#">Forgot Password?</a> |
+        <a href="#">Create Account</a>
+    </p>
 
     <p class="secure-msg">
-        Your data is securely encrypted. You control how your genetic information is stored and shared.
+        Your data is securely encrypted.<br>
+        You control how your genetic information is stored and shared.
     </p>
+
 </div>
 
 <script>
-function login(e) {
-    e.preventDefault();
-    window.location.href = "dashboard.html";
+function login(event) {
+    event.preventDefault();
+
+    const email = document.getElementById("email").value.trim();
+    const password = document.getElementById("password").value.trim();
+
+    if (email !== "" && password !== "") {
+        window.location.href = "dashboard.html";
+    } else {
+        alert("Please enter an email/username and password.");
+    }
 }
 </script>
 
