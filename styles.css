@@ -29,6 +29,12 @@ nav {
     padding: 12px;
     text-align: center;
     border-bottom: 1px solid #999;
+
+    /* UPDATED: allows logout positioning */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
 }
 
 nav a {
@@ -40,6 +46,29 @@ nav a {
 
 nav a:hover {
     text-decoration: underline;
+}
+
+/* Keep normal nav links centered properly */
+nav a:not(.logout-btn) {
+    margin: 0 12px;
+}
+
+/* ===== LOGOUT BUTTON (ADDED) ===== */
+nav .logout-btn {
+    position: absolute;
+    right: 15px;
+    background: #d9534f;
+    color: white;
+    padding: 6px 12px;
+    border: 1px solid #888;
+    border-radius: 3px;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+nav .logout-btn:hover {
+    background: #c9302c;
 }
 
 /* ===== MAIN CONTENT AREA ===== */
@@ -253,5 +282,11 @@ table th {
     .search-row {
         flex-direction: column;
         align-items: stretch;
+    }
+
+    /* safer mobile logout positioning */
+    nav .logout-btn {
+        position: static;
+        margin-left: 10px;
     }
 }
