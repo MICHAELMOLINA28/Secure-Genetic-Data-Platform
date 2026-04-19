@@ -6,20 +6,24 @@
 </head>
 <body>
 
-<!-- ===== TOP BAR ===== -->
 <div class="top-bar">
     <span>Secure Genetic Data Platform - DNA Results</span>
     <span class="secure">🔒 Secure • Encrypted</span>
 </div>
 
-<!-- ===== NAVIGATION (FIXED) ===== -->
 <nav>
     <a href="dashboard.html">Dashboard</a>
-    <a href="dna-results.html">DNA Results</a>
+    <a href="my-health-data.html">My Health Data</a>
+
+    <span class="disabled-nav">DNA Results</span>
+    <span class="disabled-nav">Privacy & Security</span>
+    <span class="disabled-nav">Resources</span>
+    <span class="disabled-nav">Support</span>
+    <span class="disabled-nav">Profile</span>
+
     <a href="index.html" class="logout-btn">Logout</a>
 </nav>
 
-<!-- ===== MAIN CONTENT ===== -->
 <div class="container">
 
     <h1>DNA Results</h1>
@@ -27,7 +31,7 @@
     <div class="search-row">
         <input type="text" placeholder="Search traits...">
         <button>🎤</button>
-        <button class="manage">⚙ Manage Data</button>
+        <button>⚙ Manage Data</button>
     </div>
 
     <div class="error-box">
@@ -39,7 +43,7 @@
         <tr>
             <th>Trait</th>
             <th>Result</th>
-            <th>Risk ℹ</th>
+            <th>Risk</th>
             <th>Status</th>
         </tr>
         <tr>
@@ -50,34 +54,7 @@
         </tr>
     </table>
 
-    <h3>Visual Breakdown of Your Results</h3>
-
-    <div class="toggle">
-        <button>Chart</button>
-        <button>Table</button>
-    </div>
-
-    <div class="chart-box">Graph / Chart</div>
-
-    <button class="download" onclick="confirmDownload()">Download Report</button>
-
-    <div class="privacy">
-        <h3>Your Data & Privacy</h3>
-        <label><input type="checkbox"> Allow data sharing</label>
-        <p>View Privacy Settings</p>
-        <p>Delete My Data</p>
-    </div>
-
-    <button class="help">Need Help?</button>
-
 </div>
-
-<!-- ===== SCRIPT ===== -->
-<script>
-function confirmDownload() {
-    alert("Are you sure you want to download your genetic report?\nThis file may contain sensitive information.");
-}
-</script>
 
 </body>
 </html>
