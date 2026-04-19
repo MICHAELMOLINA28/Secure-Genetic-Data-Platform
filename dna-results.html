@@ -13,48 +13,71 @@
 
 <nav>
     <a href="dashboard.html">Dashboard</a>
-    <a href="my-health-data.html">My Health Data</a>
-
-    <span class="disabled-nav">DNA Results</span>
-    <span class="disabled-nav">Privacy & Security</span>
-    <span class="disabled-nav">Resources</span>
-    <span class="disabled-nav">Support</span>
-    <span class="disabled-nav">Profile</span>
-
-    <a href="index.html" class="logout-btn">Logout</a>
+    <a href="#">My Health Data</a>
+    <a href="dna-results.html">DNA Results</a>
+    <a href="#">Privacy & Security</a>
+    <a href="#">Resources</a>
+    <a href="#">Support</a>
+    <a href="#">Profile</a>
 </nav>
 
 <div class="container">
 
-    <h1>DNA Results</h1>
+<h1>DNA Results</h1>
 
-    <div class="search-row">
-        <input type="text" placeholder="Search traits...">
-        <button>🎤</button>
-        <button>⚙ Manage Data</button>
-    </div>
+<div class="search-row">
+    <input type="text" placeholder="Search traits...">
+    <button>🎤</button>
+    <button class="manage">⚙ Manage Data</button>
+</div>
 
-    <div class="error-box">
-        ⚠ No results found<br>
-        Please enter a valid trait
-    </div>
+<div class="error-box">
+    ⚠ No results found<br>
+    Please enter a valid trait
+</div>
 
-    <table>
-        <tr>
-            <th>Trait</th>
-            <th>Result</th>
-            <th>Risk</th>
-            <th>Status</th>
-        </tr>
-        <tr>
-            <td>Example Trait</td>
-            <td>Positive</td>
-            <td>Low</td>
-            <td>Normal</td>
-        </tr>
-    </table>
+<table>
+    <tr>
+        <th>Trait</th>
+        <th>Result</th>
+        <th>Risk ℹ</th>
+        <th>Status</th>
+    </tr>
+    <tr>
+        <td>Example Trait</td>
+        <td>Positive</td>
+        <td>Low</td>
+        <td>Normal</td>
+    </tr>
+</table>
+
+<h3>Visual Breakdown of Your Results</h3>
+
+<div class="toggle">
+    <button>Chart</button>
+    <button>Table</button>
+</div>
+
+<div class="chart-box">Graph / Chart</div>
+
+<button class="download" onclick="confirmDownload()">Download Report</button>
+
+<div class="privacy">
+    <h3>Your Data & Privacy</h3>
+    <label><input type="checkbox"> Allow data sharing</label>
+    <p>View Privacy Settings</p>
+    <p>Delete My Data</p>
+</div>
+
+<button class="help">Need Help?</button>
 
 </div>
+
+<script>
+function confirmDownload() {
+    alert("Are you sure you want to download your genetic report?\nThis file may contain sensitive information.");
+}
+</script>
 
 </body>
 </html>
