@@ -6,38 +6,51 @@
 </head>
 <body>
 
+<!-- ===== TOP BAR ===== -->
 <div class="top-bar">
     <span>Secure Genetic Data Platform - Dashboard</span>
-    <span class="secure">🔒 Secure Connection</span>
+    <span class="secure">🔒 Secure • Encrypted</span>
 </div>
 
-<nav class="navbar">
-  <div class="nav-left">
+<!-- ===== NAVIGATION ===== -->
+<nav>
     <a href="dashboard.html">Dashboard</a>
     <a href="dna-results.html">DNA Results</a>
-  </div>
-
-  <div class="nav-right">
     <a href="index.html" class="logout-btn">Logout</a>
-  </div>
 </nav>
 
+<!-- ===== MAIN CONTENT ===== -->
 <div class="container">
-    <h1>Welcome, User</h1>
 
+    <h1>Dashboard</h1>
+
+    <p>Welcome to your secure genetic data dashboard. Select a section below to view your information.</p>
+
+    <!-- ===== DASHBOARD CARDS ===== -->
     <div class="card">
-        <h3>Health Summary</h3>
-        <ul>
-            <li>Last Login</li>
-            <li>Recent Uploads</li>
-            <li>Security Alerts</li>
-        </ul>
+        <h3>DNA Overview</h3>
+        <p>View a summary of your genetic traits and health indicators.</p>
+        <a href="dna-results.html">Go to DNA Results →</a>
     </div>
 
     <div class="card">
         <h3>Recent Activity</h3>
-        <p>No recent activity</p>
+        <p>No recent activity recorded.</p>
     </div>
+
+    <div class="card">
+        <h3>Account Security</h3>
+        <p>Your account is currently secured with encryption and protected access controls.</p>
+    </div>
+
+    <div class="card">
+        <h3>Data Management</h3>
+        <p>Manage, download, or delete your genetic data.</p>
+    </div>
+
+    <!-- OPTIONAL HELP BUTTON -->
+    <button class="help">Need Help?</button>
+
 </div>
 
 </body>
