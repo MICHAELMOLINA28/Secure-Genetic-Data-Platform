@@ -99,6 +99,9 @@ nav a:hover {
     cursor: pointer;
     font-weight: bold;
     text-align: center;
+
+    display: block;
+    margin: 0 auto;
 }
 
 .login-box button:hover {
